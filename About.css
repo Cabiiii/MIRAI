@@ -1,0 +1,156 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    line-height: 1.6;
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+img, picture, video, canvas {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button, input, select, textarea {
+    font: inherit;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, #ffcc00, #b36b00);
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+header .logo h1 {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 36px;
+    color: #000;
+}
+
+header nav a {
+    color: #000;
+    padding: 10px 20px;
+    font-weight: 700;
+    font-size: 18px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+header nav a:hover {
+    background-color: #b36b00;
+    color: #fff;
+    border-radius: 5px;
+}
+
+header .user-icon a {
+    color: #000;
+    font-size: 30px;
+}
+
+/* Image */
+img[src*="Background.jpg"] {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Content */
+.content {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: -50px;
+    border-radius: 10px;
+}
+
+.content h2 {
+    font-size: 40px;
+    color: #b36b00;
+    margin-bottom: 10px;
+}
+
+.content p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Section */
+.section {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.section h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.section p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #666;
+}
+
+.section:nth-child(odd) h3 {
+    color: #a64d79;
+}
+
+.section:nth-child(even) h3 {
+    color: #4d79a6;
+}
+
+/* Footer */
+.footer {
+    background: #ffcc00;
+    padding: 20px;
+    text-align: center;
+    color: #333;
+    font-size: 14px;
+}
+
+.footer .social-icons a {
+    margin: 0 10px;
+    color: #333;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.footer .social-icons a:hover {
+    color: #b36b00;
+}
+
+.footer p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+}

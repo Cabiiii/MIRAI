@@ -1,0 +1,131 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Link Styles */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(to right, #ffcc00, #b36b00);
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+header .logo h1 {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 36px;
+    color: #000;
+}
+
+header nav a {
+    color: #000;
+    padding: 10px 20px;
+    font-weight: 700;
+    font-size: 18px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+header nav a:hover {
+    background-color: #b36b00;
+    color: #fff;
+    border-radius: 5px;
+}
+
+header .user-icon a {
+    color: #000;
+    font-size: 30px;
+}
+
+/* Products Section Styles */
+.products-title {
+    text-align: center;
+    font-size: 50px;
+    margin: 30px 0;
+    font-family: 'Great Vibes', cursive;
+    color: #b36b00;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.product {
+    text-align: center;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    transition: transform 0.3s;
+}
+
+.product:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.product p {
+    margin: 10px 0;
+    color: #333;
+}
+
+.product .price {
+    font-weight: bold;
+    color: #b36b00;
+}
+
+/* Footer Styles */
+.footer {
+    background: #ffcc00;
+    padding: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.footer .social-icons a {
+    margin: 0 10px;
+    color: #333;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.footer .social-icons a:hover {
+    color: #b36b00;
+}
+
+.footer p {
+    margin: 15px 0 0;
+    font-size: 14px;
+}
